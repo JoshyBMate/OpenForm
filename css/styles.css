@@ -49,10 +49,12 @@ html, body {
   color: #ffffff;
   background-image: url("../Images/topBanner.jpg");
   height: 100%;
-  padding: 10% 20%;
+  padding: 0% 20%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 
 .bannerContentContainer {
@@ -89,8 +91,18 @@ html, body {
   padding: 8% 10%;
 }
 
+.navContainer {
+  background-color: #23335d;
+  color: #fff;
+}
+
 .navbar {
   padding: 0;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0) !important;
+  /*DUDE JUST LISTEN TO THE STYLE*/
 }
 
 #navbarNav {
@@ -141,7 +153,6 @@ html, body {
 
 .aboutContentContainer h3 {
   font-weight: 700;
-  margin-bottom: 3.125rem;
 }
 
 .aboutContentContainer span {
@@ -167,7 +178,6 @@ html, body {
 
 .serviceContentContainer h2 {
   text-align: center;
-  margin-bottom: 6rem;
 }
 
 .serviceContent {
@@ -277,26 +287,165 @@ input::placeholder {
 
 .messageContainer {
   margin: 5rem;
-  margin-top: 8.8rem;
   position: absolute;
+  box-shadow: 5px 5px 8px #888;
+}
+.alert {
+  margin-bottom: 0;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////*/
 /*RESPONSIVE DESIGN SECTION*/
+@media (max-width: 1280px) {
+  .navbar-nav {
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .navLinkRight {
+    margin-right: 0;
+  }
+
+  .navLinkLeft {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 1028px) {
+  .messageContainer {
+    margin: 1rem;
+  }
+
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+
   .bannerContainer {
     padding: 0;
+    display: flex;
+    align-items: center;
   }
 
   .bannerContentContainer p {
     font-size: 1rem;
     margin-bottom: 4rem;
   }
+
   .bannerLogo {
     width: 100%;
   }
 
-  .row {
-    margin: 0;
+  .navbar-nav {
+    align-items: flex-start;
+    height: auto;
   }
-}
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .navLinkRight {
+    margin-right: 0;
+  }
+
+  .navLinkLeft {
+    margin-left: 0;
+  }
+
+  .heading {
+    margin-bottom: 1rem;
+  }
+
+  .goldLine:after {
+    padding-top: 10px;
+  }
+
+  .aboutContainer {
+    padding: 5%;
+  }
+
+  .aboutContent {
+    margin-top: 1rem;
+  }
+
+  .subheading {
+    margin-bottom: 1rem;
+  }
+
+  .aboutRow {
+    text-align: left;
+  }
+
+  .aboutImage {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .aboutText {
+    padding: 0;
+  }
+
+  .servicesContainer {
+    padding: 5%;
+  }
+
+  .serviceContent {
+    margin: 2.5rem 0 0 0;
+    width: 100%;
+  }
+
+  .serviceText {
+    margin-bottom: 2rem;
+  }
+
+  .serviceTitle h4 {
+    font-size: 1.2rem;
+  }
+
+  .serviceBody p {
+    font-size: 1rem;
+  }
+
+  .contactContent {
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .contactFormGroup1 {
+    display: initial;
+  }
+
+  .contactFormGroup1 input {
+    width: 100%;
+  }
+
+  .contactFormGroup3 {
+    float: none;
+  }
+
+  button {
+    float: right;
+  }
+
+  .footerContainer {
+    font-size: 0.5rem;
+  }

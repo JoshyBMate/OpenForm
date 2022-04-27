@@ -32,32 +32,31 @@
     </div>
   </section>
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse blueSection" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navLinkRight" href="#">ABOUT</a>
-          </li>
+  <div class="container-fluid navContainer navbar-dark">
+    <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navLinkRight" href="#">ABOUT</a>
+        </li>
 
-          <a class="navbar-brand" href="#"><img src="Images/Cathryn-Wright-Website-logo-v2.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img src="Images/Cathryn-Wright-Website-logo-v2.png" alt=""></a>
 
-          <li class="nav-item">
-            <a class="nav-link navLinkLeft" href="#">SERVICES</a>
-          </li>
-          <li class="nav-item navLinklast">
-            <a class="nav-link">CONTACT</a>
-          </li>
-        </ul>
-      </div>
+        <li class="nav-item">
+          <a class="nav-link navLinkLeft" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item navLinklast">
+          <a class="nav-link">CONTACT</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <section class="aboutContainer">
     <div class="container-fluid">
@@ -68,7 +67,7 @@
       <h2 class="heading goldLine">ABOUT</h2>
 
       <div class="row aboutRow">
-        <div class="col-lg-6">
+        <div class="col-lg-6 aboutImageContainer">
           <img class="aboutImage" src="Images/Cathryn-Wright-profile-img.png" alt="">
         </div>
         <div class="col-lg-6 aboutContent">
@@ -76,13 +75,13 @@
             <span>ATTORNEY | NOTARY | CONVEYANCER<span>
           </h3>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 aboutText">
               <p>Cathy holds an LLB. Law Degree from the University of Johannesburg and is an admitted Attorney, Notary and Conveyancer of the High Court of South Africa. She has experience in the legal profession where she specialised as a
                 Conveyancer
                 and Notary Public. Cathy further broadened her professional expertise by joining an international corporate Shipping Company which amplified her passion for customer centricity and delivering cost-effective solutions for her clients.
               </p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 aboutText">
               <p>Relocating to the Garden Route, Cathy established Cathryn Wright Attorneys. With guiding principles based on building solid trust and enduring relationships with her clients, Cathryn Wright Attorneys provides legal services that
                 place the
                 client at the centre of all that it does.</p>
@@ -159,7 +158,7 @@
       <div class="col-lg-6" id="googleMap">
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 p-0">
         <div class="messageContainer">
           <div class="alert alert-danger messageError hidden" role="alert">
             <ul class="errorList">

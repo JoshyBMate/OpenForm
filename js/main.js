@@ -42,6 +42,7 @@ $(document).ready(function() {
     let errors = [];
     $(".messageError").addClass("hidden");
     $(".messageSuccess").addClass("hidden");
+    $(".messageContainer").removeClass("hidden");
     $("li").remove(".errorItem");
     if (!validateName()) {
       errors.push("Invalid Name");
@@ -69,6 +70,10 @@ $(document).ready(function() {
     else {
       $(".messageSuccess").removeClass("hidden");
     }
+  });
+
+  $(".messageContainer").click(function(){
+    $(".messageContainer").addClass("hidden");
   });
 
 });
