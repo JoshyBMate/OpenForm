@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Open-sans;
+  height: 100%;
+}
+
+/*COMMON STYLES*/
+.heading {
+  font-family: Inter, Open-sans;
+  letter-spacing: 15px;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+.subheading {
+  font-family: Inter, Open-sans
+}
+
+.goldLine:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+  padding-top: 30px;
+  border-bottom: 5px solid #cda131;
+}
+
+.blueSection {
+  background-color: #23335d;
+  color: #fff;
+}
+
+.whiteSection {
+  color: #23335d;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+/*TOP BANNER SECTION*/
+.bannerContainer {
+  color: #ffffff;
+  background-image: url("../Images/topBanner.jpg");
+  height: 100%;
+  padding: 10% 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bannerContentContainer {
+  text-align: center;
+}
+
+.bannerContentContainer p {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.bannerLogo {
+  margin-bottom: 3rem;
+}
+
+.bannerHeading {
+  margin-bottom: 3rem;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+
+.bannerLine {
+  width: 20%;
+  margin: 0 auto;
+  border: none;
+  border-top: 5px solid #cda131;
+  opacity: 0.8;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*ABOUT SECTION*/
+.aboutContainer {
+  background-image: url("../Images/AboutBackground.jpg");
+  padding: 8% 10%;
+}
+
+.navbar {
+  padding: 0;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+.navbar-nav {
+  height: 9rem;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.navbar-brand {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-family: Inter, Open-sans;
+}
+
+.navLinkRight {
+  margin-right: 55px;
+}
+
+.navLinkLeft {
+  margin-left: 55px;
+}
+
+.navLinklast {
+  margin-right: 0;
+}
+
+.aboutContentContainer {
+  text-align: center;
+}
+
+.aboutImage {
+  width: 90%;
+}
+
+.aboutContentContainer h3 {
+  font-weight: 700;
+  margin-bottom: 3.125rem;
+}
+
+.aboutContentContainer span {
+  font-size: 1.3rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+}
+
+.aboutRow {
+  text-align: justify;
+}
+
+.aboutContent {
+  margin-top: 4.0625rem;
+  padding: 0;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*SERVICE SECTION*/
+.servicesContainer {
+  padding: 8% 15%;
+}
+
+.serviceContentContainer h2 {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.serviceContent {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.serviceTitle h4 {
+  font-size: 1.20rem;
+}
+
+.serviceBody p {
+  font-size: 1.15rem;
+}
+
+.serviceText {
+  margin-bottom: 3rem;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+/*CONTACT SECTION*/
+.contactContent {
+  padding: 8% 15%;
+  text-align: center;
+  background-image: url("../Images/ContactBackground.jpg");
+}
+
+.contactContent p {
+  font-weight: bold;
+}
+
+.contactEmail {
+  color: #cda131;
+  margin-bottom: 3.125rem;
+}
+
+.contactForm {
+  text-align: left;
+}
+
+.contactFormGroup1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactFormGroup1 input {
+  width: 49%;
+}
+
+.contactFormGroup3 {
+  float: right;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #23335d;
+  color: #cda131;
+  background: transparent;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #cda131;
+}
+
+.randomSum {
+  width: 3.125rem;
+  margin-right: 20px;
+}
+
+.contactFormButton {
+  background-color: #cda131;
+  color: #23335d;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  font-family: Inter, Open-sans;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+/*FOOTER SECTION*/
+.footerContainer {
+  padding: 3% 20%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerContainer p {
+  margin: 0;
+}
+
+.footerContainer span {
+  color: #cda131;
+}
+
+.hidden {
+  display: none;
+}
+
+.messageContainer {
+  margin: 5rem;
+  margin-top: 8.8rem;
+  position: absolute;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+/*RESPONSIVE DESIGN SECTION*/
+@media (max-width: 1028px) {
+  .bannerContainer {
+    padding: 0;
+  }
+
+  .bannerContentContainer p {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+  .bannerLogo {
+    width: 100%;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
